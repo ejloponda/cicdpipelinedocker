@@ -1,0 +1,72 @@
+.ic {
+	display: inline-block;
+	overflow: hidden;
+	height: 20px;
+}
+
+.ic .icon2 {
+	margin: -20px 0 0 0;
+	padding: 0;
+}
+
+.ic .icon2:hover{
+	margin: 0;
+	padding: 0;
+}
+
+#family-medical .disease_ul {
+	margin: 15px 0 0 33px;
+	padding: 0;
+}
+
+/*#family-medical .disease_ul li.firstHeader {margin: 0 0 0 33px; padding: 0;}*/
+
+#family-medical .disease_ul  h3{
+	font: bold 14px arial; 
+	color: #636363;
+	margin: 0;
+	padding: 0;
+}
+
+#family-medical .disease_ul  li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#family-medical .disease_ul  li.firstTd{width: 220px; margin-right: 20px}
+#family-medical .disease_ul  li.middleTd{width: 125px; margin-right: 25px}
+#family-medical .disease_ul  li.lastTd {width: 80px; margin-left: -30px;}
+
+#family-medical .disease_ul input[type="text"] {
+	font: normal 12px arial;
+	outline: none;
+	color: #464646;
+	background-color: #fbfbfb;
+	width: 125px;
+	height: 25px;
+	border: 1px solid #cccccc;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px; 
+	-khtml-border-radius: 5px 5px 5px 5px; 
+	padding: 0 0 0 3px;
+	margin: 0;
+}
+
+#family-medical .disease_ul input[type="text"]:focus {
+	-moz-box-shadow: inset 0 0 5px #ccc;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+    box-shadow: inset 0 0 5px #ccc;
+}
+
+
+.not-hilited {
+	color: #898989 !important;
+	font-size: 24px ;
+}
+
+.not-hilited:hover {
+	color: #f8941d !important;
+	cursor: pointer;
+}

@@ -1,0 +1,543 @@
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	background-color: #ebebeb;
+	color: #555;
+	font-family: arial;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+	font-family: myriad pro;
+}
+
+#content .head {
+	width: 100%;
+	margin: 48px auto;
+	padding: 0 0 20px 0;
+	text-align: center;
+	font: normal 30px myriad pro;
+	color: #555555;
+	border-bottom: 1px solid #b7b7b7;
+}
+
+#content .header img {
+	width: 200px;
+	height: 158px;
+	margin: 100px 0 50px 0;
+}
+
+#header {
+	width: inherit;
+	height: 50px;
+	background-color: #eff3e4;
+	-moz-box-shadow: 0px 2px 3px 0px #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px #ccc;
+    box-shadow: 0px 2px 3px 0px #ccc;
+}
+
+#header02 {
+	width: inherit;
+	background-color: #eff3e4;
+	-moz-box-shadow: 0px 2px 3px 0px #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px #ccc;
+    box-shadow: 0px 2px 3px 0px #ccc;
+}
+
+#header02 .topbar {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.logo-top{
+	width: 180px;
+	height: 47px;
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+
+#header02 .red {
+	float: right;
+	margin-right: 10px;
+}
+
+#header02 .red li {
+	display: inline-block;
+	float: left;
+}
+
+#header02 .clear { 
+	clear: both;
+	height: 1px;
+	width: inherit;
+}
+
+.notify {
+	padding: 5px;
+}
+
+.notify:hover {
+	opacity: .5;
+}
+
+.account {
+	cursor: pointer;
+	padding: 8px 40px 8px 8px ;
+	margin: 0 0 0 5px;
+	color: white;
+	font-size: 12px;
+	background: #942222 url(../images/background-red.png) right no-repeat;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px; 
+	-khtml-border-radius: 0 0 4px 4px; 
+	
+}
+
+.account:hover {
+	background-color: #ce4b00;
+}
+
+.account ul {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+.account li {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+.account img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	vertical-align: middle;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px; 
+	-khtml-border-radius: 2px; 
+}
+
+/*Initialize*/
+ul.red, ul.red ul.sub {
+    padding:0;
+    margin: 0;
+}
+ul.red li, ul.red ul.sub li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul.red li a, ul.red li ul.sub li a {
+    text-decoration: none;
+    color: #787878;
+    background: #fffdf1;
+    padding: 10px 0 10px 5px;
+    display:inline-block;
+	width: 130px;
+	border-bottom: 1px dashed orange;
+}
+/*Make the parent of sub-menu relative*/
+ul.red li {
+    position: relative;
+}
+/*sub menu*/
+ul.red li ul.sub {
+    display:none;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    width: 100%;
+}
+ul.red li:hover ul.sub {
+    display:block;
+}
+ul.sub li, ul.sub li a {
+	width: 100% !important
+}
+ul.sub li a {
+	padding: 10px 12px !important;
+}
+#content {
+	padding-bottom:50px; /* Height of the footer element */
+	text-align: center;
+	color: #787878;
+	min-height: 94%;
+}
+
+/**Sign-in**/
+
+#signincontent { 
+	padding: 20px 0 0 0;
+	margin: 0 auto;
+	width: 540px;
+	background: #f2f2f2;
+	border: 1px solid #d6d6d6;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; /* future proofing */
+	-khtml-border-radius: 4px; /* for old Konqueror browsers */
+	-moz-box-shadow: 0 2px 2px 0 #ccc;
+    -webkit-box-shadow: 0 2px 2px 0 #ccc;
+    box-shadow: 0 2px 2px 0 #ccc;
+	font: normal 14px myriad pro;	
+	
+}
+
+#signincontent .clear{ 
+	clear: both;
+	height: 16px;
+	width: 550px;
+}
+
+#signincontent .signinform  label{ 
+	color: #78815f;
+	padding-top: 8px;
+	font-weight: none;
+	font-size: 18px;
+	float: left;
+}
+
+#signincontent .signinform { 
+	margin: 0 auto 0 auto; 
+	padding: 0;
+	width: 420px;
+	display: block;
+}
+
+#signincontent .signinform ul{ 
+	float: right;
+}
+
+#signincontent .signinform li{ 
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 3px 0 3px;
+}
+
+#signincontent a{
+	font: normal 14px myriad pro;
+	color: #f8941d;
+	text-transform: uppercase;
+}
+
+#signincontent a:hover{
+	color: #58b300;
+}
+
+#signincontent .signintextfield { 
+	width: 280px; 
+	height: 35px;
+	margin: 0; 
+	float: right;
+	padding: 0 0 0 5px; 
+	outline: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; 
+	-khtml-border-radius: 4px; 
+	-moz-box-shadow: inset 0 0 5px #ccc;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+    box-shadow: inset 0 0 5px #ccc;
+	border: 1px solid #ccc;
+}
+
+#signincontent .signinbutton { 
+	margin:0;
+	float: right;
+	font: normal 16px myriad pro; 
+	padding: 4px 20px; 
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #f26522; 
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; 
+	-khtml-border-radius: 4px; 
+	letter-spacing: 1; 
+	color: white; 
+	text-shadow: 0px -1px 0px #000; 
+	border: none;
+}
+
+#signincontent .submit { 
+	margin:0;
+	font: normal 16px myriad pro; 
+	padding: 4px 20px; 
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #f26522; 
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; 
+	-khtml-border-radius: 4px; 
+	letter-spacing: 1; 
+	color: white; 
+	text-shadow: 0px -1px 0px #000; 
+	border: none;
+}
+
+#signincontent .signinbutton:hover, #signincontent .submit:hover { 
+	background-color: #58b300;
+	-webkit-transition:0.2s ease;
+    -moz-transition:0.2s ease;
+    -ms-transition:0.2s ease;
+    -o-transition:0.2s ease;
+    transition:0.2s ease;
+}
+
+#signincontent .signinbutton:active, #signincontent .submit:active { 
+	color: #8f0000;
+	text-shadow: none;
+	background-color: red;
+}
+
+#forgot{ 
+	padding: 0; 
+	margin: 20px auto;
+	width: 430px;
+	word-spacing: 6px;
+	font: normal 16px arial;
+}
+
+#forgot li{ 
+	display: inline-block;
+}
+
+#forgot li:first-child{margin: 0; padding: 2px 0 2px 0;}
+#forgot li:last-child{ margin: 0; padding:0;}
+
+
+#forgot .click { 
+	cursor: default;
+	font: normal 22px myriad pro;
+	text-decoration: underline;
+	padding: 5px 12px 5px 12px; 
+	background-color: transparent; 
+	text-align: center; 
+	text-transform: uppercase;
+	letter-spacing: 1; 
+	color: #f8941d; 
+	display: block;
+	border: none;
+}
+
+#forgot .click:hover { 
+	color: #58b300;
+	-webkit-transition:0.4s ease;
+    -moz-transition:0.4s ease;
+    -ms-transition:0.4s ease;
+    -o-transition:0.4s ease;
+    transition:0.4s ease;
+}
+
+
+.forgot {
+	width: 410px;
+	margin: 30px auto 0 auto;
+	padding: 0;
+	font-size: 16px;
+}
+
+.forgot a{
+	font: regular 20px myriad pro;
+	color: #f8941d;
+	text-transform: uppercase;
+}
+
+.forgot a:hover{
+	color: #58b300;
+}
+
+/**landing options**/
+
+#options {
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0 auto 0 auto;
+}
+
+#options .box div {
+	/*width: inherit;*/
+	display: block;
+	text-align: center;
+}
+
+#options .box {
+	font-size: 26px;
+	font-family: myriad pro;
+	font-weight: 300;
+	padding: 10px;
+	margin: 10px;
+	text-shadow: 0px 1px 0px rgba(185, 185, 185, 1);
+}
+
+#options .box li, #options .box a {
+	line-height: 28px;
+	text-align: center;
+	width: 100%;
+	height: 220px;
+	display: inline-block;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	vertical-align: top;
+	color: #787878;
+}
+
+#options .box li:hover, #options .box a:hover  {
+	cursor: default;
+	background-color: #f4f4f4;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px; 
+	-khtml-border-radius: 6px; 
+	-webkit-transition:0.4s ease;
+    -moz-transition:0.4s ease;
+    -ms-transition:0.4s ease;
+    -o-transition:0.4s ease;
+    transition:0.4s ease;
+	-moz-box-shadow: inset 0 0 5px #ccc;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+    box-shadow: inset 0 0 8px #ccc;
+	color: #f8941d;
+	text-decoration: none;
+}
+
+#options .box .img {
+	overflow:hidden; 
+	height:110px; 
+	margin: 0;
+	padding:0;
+}
+
+#options .box img {
+	margin: -110px 0 0 0;
+	padding:0;
+}
+
+#options .box img:hover {
+	margin: 0;
+	padding:0;
+	-webkit-transition:0.7s ease;
+    -moz-transition:0.7s ease;
+    -ms-transition:0.7s ease;
+    -o-transition:0.7s ease;
+    transition:0.7s ease;
+}
+
+/**footer**/
+
+#footer {
+    background-color: #eff3e4;
+    -moz-box-shadow: 0px -2px 3px 0px #ccc;
+    -webkit-box-shadow: 0px -2px 3px 0px #ccc;
+    box-shadow: 0px -2px 3px 0px #ccc;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    color: #787878;
+    padding: 20px 0px;
+}
+
+#footer .copyright {
+	width: 70%;
+	margin: 0px auto 0 auto;
+	padding: 0px;
+}
+
+#footer .copyright p{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .copyright ul {
+	margin:  0;
+	padding: 0;
+	float: right;
+}
+
+#footer .copyright li {
+	display: inline;
+}
+
+#footer .copyright a {
+	color: #787878;
+}
+
+#footer .copyright a:hover {
+	color: orange;
+}
+
+#footer .copyright li:first-child{margin: 0; padding: 0 5px 0 5px; border-right: 1px solid #ccc;}
+#footer .copyright li:last-child{margin: 0; padding: 0 5px 0 5px;}
+
+.clear { 
+	clear: both;
+	height: 15px;
+	width: 500px;
+}
+
+@media only screen and (min-width: 991px) {
+.col-sm-offset-1, .col-xs-offset-1 {
+	margin-left: 0px !important
+}
+
+}
+@media only screen and (max-width: 991px) {
+ #options .box a {
+	line-height: 25px;
+	font-size: 20px;
+}
+}
+
+/*FORGOT PASS*/
+.forgot-pass-wrapper {
+	padding-bottom: 20px !important	;
+}
+.header-txt {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f26522;
+    margin-bottom: 10px
+}
+.forgot-pass-wrapper .signintextfield, .button-hldr, .button-hldr .signinbutton {
+	float: none !important
+}
+.forgot-pass-wrapper label {
+	float: none !important;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#result_wrapper{
+	padding: 20px 0 0 0;
+    margin: 0 auto;
+     font-weight: bold;
+     color: #f26522;
+}

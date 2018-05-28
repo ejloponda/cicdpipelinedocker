@@ -1,0 +1,7 @@
+/application/config/config.php
+/application/config/database.php
+/application/config/pusher.php
+Thumbs.db
+repository
+staging
+/files

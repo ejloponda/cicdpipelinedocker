@@ -1,0 +1,116 @@
+version: "2"
+services:
+    www:
+        build:
+            context: ./
+            dockerfile: app.dockerfile
+        ports: 
+            - "8001:80"
+        volumes:
+            - .:/var/www/
+        restart: always
+        links:
+            - db
+        networks:
+            - default
+    db:
+        build:
+            context: ./ 
+            dockerfile: db.dockerfile
+        ports: 
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: rpc
+            MYSQL_USER: rpc_user
+            MYSQL_PASSWORD: userpass
+            MYSQL_ROOT_PASSWORD: pass 
+        volumes:
+            #- ./database:/docker-entrypoint-initdb.d
+            - persistent:/var/lib/mysql
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links: 
+            - db:db
+        ports:
+            - 8000:80
+        environment:
+            MYSQL_USER: rpc_user
+            MYSQL_PASSWORD: pass
+            MYSQL_ROOT_PASSWORD: pass 
+volumes:
+   persistent:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   version: '3.1'
+#   services:
+
+#     # The Application
+#     app:
+#       build:
+#         context: ./
+#         dockerfile: app.dockerfile
+#       volumes:
+#        - ./:/var/www/html
+#       restart: always
+#       ports:
+#         - "8080:80"    
+#       depends_on:
+#         - db
+#       environment:
+#       - "DB_PORT=3306"
+#       - "DB_HOST=db"
+#      # networks:
+#       #  - default
+
+
+
+#     # The Database
+#     db:
+#       #container_name: database
+#       #image: mysql:5.4
+#       image: mariadb
+#       environment:
+#       - MYSQL_ROOT_PASSWORD=razer123bite
+#       #- MYSQL_ALLOW_EMPTY_PASSWORD=yes
+#       - MYSQL_DATABASE=razer_rpc
+#       - MYSQL_USER=root
+#       - MYSQL_PASSWORD=razer123bite   
+#       volumes:
+#         - dbdata:/var/lib/mysql
+#         - ./database/rpc.sql:/docker-entrypoint-initdb.d/rpc.sql
+#        # - ./my.cnf:/etc/mysql/my.cnf
+#       restart: always
+#       ports:
+#           - "3306:3306"
+#  #     networks:
+#  #         - default   
+
+#   volumes:
+#     dbdata:
+
+#  # networks :
+#   #  wp-net :
+#   #      driver: bridge

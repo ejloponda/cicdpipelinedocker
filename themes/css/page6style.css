@@ -1,0 +1,81 @@
+/*CSS Reset
+===========================================*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;}
+
+table{border-collapse:separate;border-spacing:0;margin-bottom:1.4em;margin:0;padding:0;border:0;}
+
+caption,th,td{text-align:left;font-weight:400;}
+
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+
+blockquote,q{quotes:;}
+
+a img{border:none; }
+
+img{border: none;}
+/*===========================================*/
+
+
+
+body { font-family: "Lato", sans-serif; font-size: 15px; }
+label { font-weight: bold; margin-right: 5px; }
+input { padding: 1%; border:transparent; border-width: 1px; width: inherit; }
+
+.supercontainer { width: 1024px; height: auto; margin-right: auto; margin-left: auto; text-align: center; margin-top: 10px; }
+.logo img { width: 100%; }
+.logo { width: 32%; display: inline-block; }
+
+.title { font-weight: 700; padding-top: 20px; }
+
+.header-box { width: 97.5%; border: solid; border-style: double; margin-top: 20px; padding: 1%; text-align: center; }
+.hbox-left { width: 49%; display: inline-block; text-align: left; }
+.hbox-right { width: 49%; display: inline-block; text-align: left; }
+
+.service { margin-right: 48px; }
+.date { margin-right: 59px; }
+
+.table-labels td { font-weight: 900; font-size: 15px!important; padding: 1%!important;}
+
+.table-inputs { width: 100%; width: 100%; margin-top: 10px; }
+.table-inputs td { text-align: center; }
+
+.itemno { width: 10%; border: solid; border-width: 1px; }
+.description { width: 60%; border: solid; border-width: 1px; }
+.unitprice { width: 10%; border: solid; border-width: 1px; }
+.quantity { width: 10%; border: solid; border-width: 1px; }
+.total { width: 10%; border: solid; border-width: 1px; }
+
+.itemno2 { width: 10%; border: solid; border-width: 1px; border-top: transparent; border-bottom: transparent; padding: 1%;}
+.description2 { width: 59%; border: solid; border-width: 1px; border-top: transparent; border-bottom: transparent; text-align: left!important; padding: 1%;}
+.unitprice2 { width: 10%; border: solid; border-width: 1px; border-top: transparent; border-bottom: transparent; padding: 1%; }
+.quantity2 { width: 10%; border: solid; border-width: 1px; border-top: transparent; border-bottom: transparent; padding: 1%; }
+.total2 { width: 10%; border: solid; border-width: 1px; border-top: transparent; border-bottom: transparent; padding: 1%; }
+
+.itemno2 input { width: 98%; border: transparent; text-align: center;}
+.description2 input { width: 98%; border: transparent;  }
+.unitprice2 input { width: 98%;  border: transparent; text-align: center; }
+.quantity2 input { width: 98%; border: transparent; text-align: center;}
+.total2 input { width: 98%; border: transparent; text-align: center;}
+
+.table-items td { padding: 1%; }
+
+.table-totals {  height: 100px; }
+.table-totals td { padding: 1%!important; }
+
+.itemno3 { width: 10%; border: transparent; border-top: solid; border-width: 1px; padding: 1%;}
+.description3 { width: 59%; border: transparent; border-top: solid; border-width: 1px; padding: 1%;}
+.unitprice3 { width: 10%; border: transparent; border-top: solid; border-width: 1px; padding: 1%; }
+.quantity3 { width: 10%; border: transparent; border-top: solid; border-width: 1px; padding: 1%; }
+.total3 { width: 10%; border: transparent; border-top: solid; border-width: 1px; padding: 1%; }
+
+.invoice-bottom { width: 100%; }
+.invoice-bottom-left { width: 49%; float:left; text-align: left; }
+.invoice-bottom-right { width: 49%; float:left; text-align: left; }
+
+.name-sign { width: 96%; border-top: solid; text-align: center; padding: 2%; border-width: 2px; padding-top:0; margin-top: 30px; }
+
+.ftable-left { width: 90%; text-align: right; padding: 1%; }
+.ftable-right { width: 10%; text-align: right; padding: 1%; }
+.ftable-right2 { width: 10%; text-align: right; border-bottom: solid; border-width: 1px; padding: 1%; }
+.ftable-right3 { width: 10%; text-align: right; border: transparent; border-bottom: solid; border-style: double; border-width: 2px; padding: 1%; }

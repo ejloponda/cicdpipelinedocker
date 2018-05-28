@@ -1,0 +1,87 @@
+/*CSS Reset
+===========================================*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;}
+
+table{border-collapse:separate;border-spacing:0;margin-bottom:1.4em;margin:0;padding:0;border:0;}
+
+caption,th,td{text-align:left;font-weight:400;}
+
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+
+blockquote,q{quotes:;}
+
+a img{border:none; }
+
+img{border: none;}
+/*===========================================*/
+
+
+
+body { font-family: "Lato", sans-serif; font-size: 15px; }
+
+.supercontainer { width: 1024px; height: auto; margin-right: auto; margin-left: auto; text-align: center; margin-top: 10px; }
+.logo img { width: 100%; }
+.logo { width: 32%; display: inline-block; }
+
+h1 { font-size: 20px; font-weight: bold; letter-spacing: 2px; }
+.headers { width: 100%; }
+.header1 { width: 33%; display: inline-block; padding: 0; text-align: left; }
+.header2 { width: 33%; display: inline-block; padding-top: 2px; font-size: 11px; font-weight: bold; line-height: 17px; padding-top: 20px; }
+.header3 { width: 33%; display: inline-block; text-align: right; font-size: 20px; font-family: "Times New Roman"; font-weight: bold; color: red; padding: 0; }
+
+.date { width: 100%; text-align: right; padding-top: 2%; }
+label { font-weight: bold; margin-right: 5px; }
+input { padding: 1%; border-top: transparent; border-left: transparent; border-right: transparent; }
+
+.info { padding-top: 2%; display: inline-block; width: 100%;}
+.info-left { text-align: left; width: 50%; float: left; }
+.info-right { text-align: left; width: 50%; float: left; }
+
+.soldto { margin-right: 56px;}
+.tin { margin-right: 94px; }
+.address { margin-right: 52px;}
+.service { margin-left: 10px; }
+
+.input-soldto {width: 350px;}
+.input-tin {width: 348px;}
+.input-address { width: 348px; }
+.input-business-style {width: 125px;}
+.input-service {width: 125px;}
+
+.terms { margin-right: 101px; }
+.id-no { margin-right: 13px; }
+.signature { }
+.tin2 { margin-right: 63px;}
+
+.input-terms {width: 344px;}
+.input-id-no {width: 343px;}
+.input-signature {width: 342px;}
+.input-tin2 {width: 343px;}
+
+td { text-align: center; border: solid; border-width: 1px; padding: 1%; font-size: 13px; padding:0; }
+.table-labels td { font-weight: 900; font-size: 15px!important; padding: 1%!important;}
+.table-input { text-align: center; width: 98%; background-color: transparent; border: none; padding-top: 10px; padding-bottom: 10px; text-align: center;}
+
+.qty { width: 5%; }
+.unit { width: 5%; }
+.unitprice { width: 15%; }
+.amount { width: 15%; }
+
+.table-bottom-labels td { width: 20%; text-align: left; padding:1%; font-weight: 900; font-size: 11px; border-bottom: transparent; padding-bottom: 0; }
+.table-bottom-info td { width: 20%; text-align: center; padding:1%; font-weight: 900; font-size: 11px; border-top: transparent; margin-bottom }
+
+.amtdue-label { font-size: 24px; }
+#amtdue-label { margin-top: -10px; float:left; }
+#total { margin-top: -10px; float:left; }
+.total-value { font-size: 30px; font-weight: 700;}
+.totalamtdue { margin-bottom: 20px; }
+
+.invoice-bottom { width: 100%; text-align: center; font-size: 13px; padding-top: 20px; }
+.invoice-bottom-left { width: 30%; float: left; text-align: left;  }
+.invoice-bottom-mid { width: 40%; float: left; text-align: center; }
+.invoice-bottom-right { width: 30%; float: left; text-align: right; }
+
+.name-sign { width: 96%; border-top: solid; text-align: center; padding: 2%; border-width: 2px; padding-top:0; margin-top: 50px;}
+
+.invoice-footer { font-weight: 900; text-decoration: underline; width: 100%; display: inline-block; margin-top: 50px; margin-bottom: 30px;}

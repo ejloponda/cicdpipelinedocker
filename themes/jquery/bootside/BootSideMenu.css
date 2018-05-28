@@ -1,0 +1,303 @@
+#n_245479199 {
+      display: none !important;
+}
+#events-wrapper {
+      width: 20%;
+      height: 300px; 
+      top: 30%;
+      right: 0px;
+}
+.event-heading{
+      width: 100%;
+    background-color: #f8941d;
+    color: #fff;
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.events-list ul{
+    padding: 10px 20px;
+    list-style: none;
+    height: 250px;
+    overflow: auto;
+    height: 300px;
+}
+
+.events-list ul li {
+    overflow: hidden;
+    margin: 10px 0px;
+    word-break: break-word;
+    font-size: 12px;
+    border-bottom: 2px dotted #ddd;
+    padding: 5px 0px;
+}
+.events-list ul li span{
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    color: #464646;
+}
+.notif-heading {
+  background-color: #28a5c1 !important
+}
+.sidebar{
+      z-index: 999999;
+      position: fixed;
+      top: -1px;
+      bottom: -1px;
+      padding:0px;
+      width: auto;
+      background-color: #fff;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, .15);
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+}
+
+.sidebar > .row > .col-xs-12, .sidebar > .row > .col-sm-12, .sidebar > .row > .col-md-12, .sidebar > .row > .col-lg-12{
+      padding:0px;
+      position: absolute;
+      bottom: 0px;
+      top: 0px;
+                
+}
+
+.sidebar >.row{
+      margin:0px;
+}
+
+.sidebar {
+      width: auto;
+}
+.sidebar.sidebar-left{
+      left:0px;
+      right:20px;
+}
+
+.sidebar.sidebar-right{
+      right:0px;
+      left:20px;
+
+}
+/*#events-wrapper-unique {
+      width: 250px;
+
+}*/
+/*SCROLL STYLE*/
+.events-list ul::-webkit-scrollbar
+ {
+  width: 7px;
+  height: 7px;
+}
+.events-list ul::-webkit-scrollbar-button
+ {
+  width: 0px;
+  height: 0px;
+}
+.events-list ul::-webkit-scrollbar-thumb {
+  background: #b3b3b3;
+  border: 0px none #b3b3b3;
+  border-radius: 0px;
+}
+
+.events-list ul::-webkit-scrollbar-thumb:active
+ {
+  background: #b3b3b3;
+}
+.events-list ul::-webkit-scrollbar-track
+ {
+  background: #fff;
+  border: 0px none #b3b3b3;
+  border-radius: 0px;
+}
+
+.events-list ul::-webkit-scrollbar-track:active
+ {
+  background: #fff;
+}
+.events-list ul::-webkit-scrollbar-corner
+ {
+  background: transparent;
+}
+@media (min-width: 400px) {
+
+}
+@media (min-width: 528px) {
+      .sidebar {
+            width: 300px;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+      }
+     
+}
+@media (min-width: 768px) {
+      .sidebar {
+            width: 250px;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+            
+      }
+
+
+}
+@media (min-width: 992px) {
+      .sidebar {
+            width: 250px;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+      }
+}
+@media (min-width: 1200px) {
+      .sidebar {
+            width: 250px;
+      }
+      .sidebar.sidebar-left{
+            left:0px;
+            right:auto;
+      }
+
+      .sidebar.sidebar-right{
+            right:0px;
+            left:auto;
+            padding: 0px !important;
+      }
+}
+.toggler{
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      border: 1px solid rgba(0, 0, 0, .15);
+      width: 20px;
+      height: 48px;
+      position: absolute;
+      top: 45%;
+      cursor: pointer;
+}
+.sidebar-left > .toggler{
+      -webkit-border-top-right-radius: 4px;
+      -webkit-border-bottom-right-radius: 4px;
+      -moz-border-radius-topright: 4px;
+      -moz-border-radius-bottomright: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-left: 1px solid #fff;
+      -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, .175);
+      box-shadow: 1px 0px 8px rgba(0, 0, 0, .175);
+      right: -20px;
+} 
+
+.sidebar-left > .toggler > span{
+      margin:15px 2px;
+}
+
+.sidebar-left > .toggler > .glyphicon-chevron-right{
+      display:none;
+}
+
+.sidebar-right > .toggler{
+      -webkit-border-top-left-radius: 4px;
+      -webkit-border-bottom-left-radius: 4px;
+      -moz-border-radius-topleft: 4px;
+      -moz-border-radius-bottomleft: 4px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-right: 1px solid #fff;
+      -webkit-box-shadow: -1px 0px 8px rgba(0, 0, 0, .175);
+      box-shadow: -1px 0px 8px rgba(0, 0, 0, .175);      		
+      left: -20px;
+} 
+
+.sidebar-right > .toggler > span{
+      margin:15px 2px;
+}
+
+.sidebar-right > .toggler > .glyphicon-chevron-left{
+      display:none;
+}
+
+.sidebar .submenu{
+      display: none;
+      position: fixed;
+} 
+
+/*Native BootStrap Hack*/
+.sidebar .list-group-item:last-child, .sidebar .list-group-item:first-child{
+      border-radius:0px;
+}
+
+.sidebar .list-group{
+      margin-bottom:0px;
+}
+.sidebar .list-group-item{
+      padding: 5px;
+      border: 1px solid #DDD;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 0px;
+      margin-top: -1px;
+}
+
+/*SIDE NOTIFICATION*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    transition: 0.9s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.adjust-width {
+  width: 250px
+}
+
+
+.side-toggler {
+    left: -20px;
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+      border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #fff;
+    -webkit-box-shadow: -1px 0px 8px rgba(0, 0, 0, .175);
+    box-shadow: -1px 0px 8px rgba(0, 0, 0, .175);
+
+
+}
+.side-toggler span{
+    margin: 15px 2px;
+}
+.adjust-width .right-icon:before {
+content: "\e080" !important
+}

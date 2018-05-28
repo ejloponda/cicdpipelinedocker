@@ -1,0 +1,6 @@
+body { background-color: #E6E6E6; text-align: center; }
+.maintenance { width: 100%; }
+.img-holder { display: inline-block; width: 50%; padding-top: 5%; }
+.text { font-family: 'Lato', sans-serif; color: #4D4D4D; font-weight: 400; letter-spacing: 5px; font-size: 13px; padding-top: 10px;}
+.text a { color: #1591AE; text-decoration: none; }
+.text a:hover { color: blue; }

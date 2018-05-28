@@ -1,0 +1,100 @@
+v1.7.1
+:: Bug Fixes
+v1.7
+:: Invoice Module
+  :: OR
+  :: Accounts Receivables
+  :: Sales Report
+  :: Collections
+:: Returns Module
+:: Reports Generator
+:: Inventory Module
+  :: Fixed Bug for date/time of stock adjustment
+  :: Stock Adjustment is connected now to Invoice and Returns Module
+v1.6.3
+:: Inventory Module
+  :: Add reason for stock adjustment
+  :: Created new page for stock adjustment
+  :: Stock adjustment history
+:: Module Management
+  :: Added Doctors List
+  :: Added Reasons List
+:: Patient Management
+  :: Added Doctors List
+v1.6.2
+:: Regimen
+  :: Duplicate Row
+v1.6.1
+:: Notifications
+v1.6
+:: Regimen
+  :: Versioning 
+v1.5.1
+:: Regimen
+  :: Add New Regimen
+    :: Duplicate Function (Breakfast to Lunch) (Lunch to Dinner)
+v1.5 // July 24, 2014
+:: Regimen
+  :: Remake of Regimen Module
+    :: Dynamic Adding of Medicines
+    :: Activity Header
+    :: Single Special Instructions per Column
+
+v1.4.1
+:: Regimen
+  :: Move Regimen Duration to top
+  :: Remake of Add New Regimen
+
+v1.4
+:: Module Management
+  :: Created Dosage Type 
+  :: Created Quantity Type
+:: Inventery Module
+  :: Integrate Dosage and Quantity Type to Add, Edit, View Inventory
+  :: Created a minor function that can add stocks (Stock adjustments)
+:: Regimen Module
+  :: Integrate Dosage and Quantity Type to Add, Edit Regimen Medicine List
+  :: Fixed format of Medicine (Medicine name Dosage Dosage Type (Quantity Quantity Type))
+  :: Added Other option to solve the issues about quantity and how does the customer take the medicine.
+:: Added Favicon
+:: New RPC Logo
+:: Fixed Problems in Patient Management
+:: Auto Compute Age
+
+v1.3.2
+:: Role Types
+  :: Fixed Delete User Role
+
+v1.3.1 Beta
+:: Fixed Redirect Login Issue
+:: Fixed View Profile 
+  :: User Permission List
+  :: Contact Details
+
+v1.3
+:: Tweek Login Module
+:: Patient Management
+  :: Added View Regimen History List
+  :: Added View Regimen Record
+:: Access Permission
+  :: Inventory
+  :: Returns
+  :: Regimen
+
+v1.2
+:: Inventory Management
+  :: Fixed Add Inventory Item
+:: Regimen Creator
+  :: Created Regimen Creator
+  :: Fixed Edit in Sessions
+  :: Added function to delete data in sessions.
+
+v1.1
+:: Patient Management
+:: Module Management
+
+v1.0
+:: User Management
+  :: Access Permission
+  :: Role Assignments
+  :: User Accounts
