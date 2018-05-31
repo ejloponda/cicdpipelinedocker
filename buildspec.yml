@@ -13,7 +13,7 @@ phases:
       - docker-compose up -d
       - docker tag src_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww   
       - docker tag src_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb   
-      - docker tag src_phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin  
+      - docker tag phpmyadmin/phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin  
   post_build:
     commands:
       - echo Build completed on `date`
