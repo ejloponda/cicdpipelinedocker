@@ -12,18 +12,18 @@ phases:
       - echo Building the Docker image...          
       - docker-compose up -d
       - docker ps
-      - docker tag src_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww   
-      - docker tag src_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb   
+      - docker tag src_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-www   
+      - docker tag src_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-db   
       - docker tag phpmyadmin/phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin  
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww 
-      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb  
+      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-www 
+      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-db  
       - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin
-      - printf '[{"name":"src_www_1","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww"}]'> imagedefinitions.json
-      #- printf '[{"name":"rpc-db","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb"}]'> imagedefinitions.json
-     # - printf '[{"name":"phpmyadmin","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin"}]'> imagedefinitions.json
+      - printf '[{"name":"rpc-www","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-www"}]'> imagedefinitions.json
+      - printf '[{"name":"rpc-db","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-db"}]'> imagedefinitions.json
+      - printf '[{"name":"phpmyadmin","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin"}]'> imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
