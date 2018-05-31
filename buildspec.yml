@@ -10,7 +10,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker-compose up
+      - docker-compose up -d
       - docker tag rpc_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww   
       - docker tag rpc_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb   
       - docker tag phpmyadmin/phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin  
