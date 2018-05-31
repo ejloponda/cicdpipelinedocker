@@ -11,6 +11,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker-compose up -d
+      - docker ps
       - docker tag src_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww   
       - docker tag src_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb   
       - docker tag phpmyadmin/phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin  
