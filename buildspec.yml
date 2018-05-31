@@ -24,6 +24,6 @@ phases:
       - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin
       - printf '[{"name":"rpc-www","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-www"}]'> imagedefinitions.json
       - printf '[{"name":"rpc-db","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpc-db"}]'> imagedefinitions.json
-      - printf '[{"name":"phpmyadmin","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin"}]'> imagedefinitions.json
+      #- printf '[{"name":"phpmyadmin","imageUri":"376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin"}]'> imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
