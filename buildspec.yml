@@ -4,20 +4,20 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - $(aws ecr get-login --no-include-email --region ap-southeast-1)
+      - aws ecr get-login --no-include-email --region ap-southeast-1
       - 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs
   build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker-compose up
-      - docker tag rpc_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs/rpc_www:latest   
-      - docker tag rpc_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs/rpc_db:latest   
-      - docker tag phpmyadmin/phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs/phpmyadmin/phpmyadmin:latest  
+      - docker tag rpc_www:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww   
+      - docker tag rpc_db:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb   
+      - docker tag phpmyadmin/phpmyadmin:latest 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin  
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs/rpc_www:latest 
-      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs/rpc_db:latest  
-      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs/phpmyadmin/phpmyadmin:latest
+      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcwww 
+      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:rpcdb  
+      - docker push 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs:phpmyadmin
