@@ -5,6 +5,7 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --no-include-email --region ap-southeast-1)
+      - 376415015573.dkr.ecr.ap-southeast-1.amazonaws.com/docker-ecs
   build:
     commands:
       - echo Build started on `date`
