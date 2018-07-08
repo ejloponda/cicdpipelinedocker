@@ -27,7 +27,6 @@ services:
             MYSQL_PASSWORD: userpass
             MYSQL_ROOT_PASSWORD: pass 
         volumes:
-            - ./database/rpc.sql:/docker-entrypoint-initdb.d/rpc.sql
             - persistent:/var/lib/mysql
         networks:
             - frontend
