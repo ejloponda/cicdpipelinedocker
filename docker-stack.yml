@@ -6,7 +6,7 @@ services:
         ports: 
             - 8001:80
         volumes:
-            - .:/var/www 
+            - .cicdpipelinedocker:/var/www 
         depends_on:
             - db
         networks:
@@ -26,7 +26,7 @@ services:
             MYSQL_PASSWORD: userpass
             MYSQL_ROOT_PASSWORD: pass 
         volumes:
-            - ./database/rpc.sql:/docker-entrypoint-initdb.d/rpc.sql
+            #- ./database/rpc.sql:/docker-entrypoint-initdb.d/rpc.sql
             - persistent:/var/lib/mysql
         networks:
             - frontend
