@@ -5,13 +5,14 @@ services:
         image: eoponda/rpc_www
         ports: 
             - 8001:80
-        #volumes:
-        #    - .cicdpipelinedocker:/var/www 
+        volumes:
+            - /home/docker/rpc/cicdpipelinedocker:/var/www 
         depends_on:
             - db
         networks:
             - frontend
         deploy:
+          placement: [node.role == manager]       
           replicas: 2
           update_config:
             parallelism: 2
@@ -26,13 +27,15 @@ services:
             MYSQL_PASSWORD: userpass
             MYSQL_ROOT_PASSWORD: pass 
         volumes:
-            #- ./database/rpc.sql:/docker-entrypoint-initdb.d/rpc.sql
+            - ./database/rpc.sql:/docker-entrypoint-initdb.d/rpc.sql
             - persistent:/var/lib/mysql
         networks:
             - frontend
         deploy:
             placement:
              constraints: [node.role == manager]
+            replicas: 2 
+
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         depends_on: 
@@ -45,6 +48,8 @@ services:
             MYSQL_ROOT_PASSWORD: pass
         networks:
             - frontend
+        deploy:
+            replicas: 2    
 
 
 networks:
@@ -53,4 +58,5 @@ networks:
 
 volumes:
   persistent:
+
 
