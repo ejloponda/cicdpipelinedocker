@@ -50,7 +50,6 @@ services:
 networks:
   frontend:
   
-
 volumes:
   persistent:
 
