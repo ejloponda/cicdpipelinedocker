@@ -5,8 +5,8 @@ services:
         image: eoponda/rpc_www
         ports: 
             - 8001:80
-        volumes:
-            - .cicdpipelinedocker:/var/www 
+        #volumes:
+        #    - .cicdpipelinedocker:/var/www 
         depends_on:
             - db
         networks:
